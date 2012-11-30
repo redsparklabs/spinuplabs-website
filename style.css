@@ -1,0 +1,142 @@
+html {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12pt;
+	color: #333333;
+	font-family: Arial;
+}
+
+section {
+	clear: both;
+}
+
+/* Header */
+
+section.header {
+	height: 150px;
+	width: 100%;
+}
+
+.container {
+	width: 1200px;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+header {
+}
+
+.logo {
+	width: 200px;
+	height: 150px;
+	background-image: url('spup-logo.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+nav.main {
+	width: 960px;
+	padding-top: 55px;
+	float: left;
+}
+
+.main ul {
+	list-style: none;
+}
+
+.main li {
+	float: left;
+	margin-right: 30px;
+	margin-left: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* Banner */
+
+section.banner {
+	height: 300px;
+	width: 100%;
+	background-color: #dbe7ec;
+}
+
+.banner-image {
+	background-image: url('computer-banner.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	width: 300px;
+	height: 300px;
+}
+
+.banner-intro {
+	width: 860px;
+	float: left;
+	text-align: center;
+}
+
+.banner h1 {
+	font-family: Helvetica;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.banner button {
+	font-size: 15pt;
+	font-family: Helvetica;
+	background-color: #014366;
+	color: #FFF;
+	font-weight: bold;
+	border-radius: 5px;
+	border: none;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Content */
+
+section.content {
+	width: 100%;
+}
+
+.sidebar-content {
+	width: 300px;
+	float: left;
+}
+
+.main-content {
+	width: 860px;
+	float: left;
+}
+
+/* Work */
+
+section.work {
+	height: 70px;
+	width: 100%;
+	background-color: #f1f1f1;
+}
+
+.logos {
+	background-image: url('who-we-work-with.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 70px;
+}
+
+/* Footer */
+
+section.footer {
+	height: 200px;
+	background-color: #303b42;
+	color: #FFF;
+	font-size: 9pt;
+	text-align: center;
+}
