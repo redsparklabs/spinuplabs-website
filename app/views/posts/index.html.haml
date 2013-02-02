@@ -1,0 +1,37 @@
+= render 'feed_link'
+.container_12
+	.grid_8
+		- if collection.present?
+			= render collection, :summary => true
+			= paginate collection
+		- else
+			No posts found.
+	.grid_4
+		.widget
+			%h3.widgettitle
+				Upcoming Classes
+			%ul
+				%li
+					%p
+						%strong
+							Lean 121 - Startup Metrics for Founders
+						%br
+						Feb 21st 7-9pm, $20
+						%br
+						Tech Ranch - Austin, TX
+				%li
+					%p
+						%strong
+							Lean Startup Machine - Weekend Workshop
+						%br
+						March 22-24th
+						%br
+						Rackspace - Austin, TX
+				%li
+					%p
+						%strong
+							Lean 111 - I have an idea, now what?
+						%br
+						Wednesday Evenings 7-9pm, April 3-29th
+						%br
+						Tech Ranch - Austin, TX
