@@ -1,0 +1,15 @@
+
+.post
+  %h2.entry-title= link_to post.title, post
+  %p.postmeta
+    Posted on Friday, Nov 22, 2012
+  .entry-content.clearfix
+    - if post.image
+      =image_tag '/assets/'+post.image, :class => 'left'
+    - if summary
+      = post.summary_html
+      = link_to 'Read More&hellip;'.html_safe, post
+    - else
+      ~ post.content_html
+  %p.postmeta
+    18 Comments | Tags: Design, Entrepreneur
