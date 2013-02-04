@@ -24,10 +24,10 @@ test:
 
 production:
   adapter: postrgesql
-  database: deeqmsb1g4ug0k
-  username: uukrdlxweeqptm
-  password: QKPm8NG94T-gf2khOtshjgrO86
-  host: ec2-54-243-243-176.compute-1.amazonaws.com
+  database:
+  username:
+  password:
+  host:
   port: 5432
   encoding: unicode
   pool: 5
