@@ -6,8 +6,8 @@ gem 'rails', '3.2.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
-	gem 'sqlite3'
-	#gem 'pg'
+	#gem 'sqlite3'
+	gem 'pg'
 end
 
 group :production do
