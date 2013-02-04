@@ -295,7 +295,7 @@ pre {
 	-moz-border-radius: 7px;
 	-webkit-border-radius: 7px;
 	border-radius: 7px;
-	-webkit-gradient(linear, 0% 0%, 0% 100%, from(#408cb2), to(#054465));
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#408cb2), to(#054465));
 }
 
 .contactbutton a {
