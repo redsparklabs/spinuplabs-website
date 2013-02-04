@@ -10,7 +10,7 @@ SpinupBlog::Application.routes.draw do
   match "/pages/*id" => 'pages#show', :as => :page, :format => false
   match "/posts/archive" => "posts#archive"
   match "/" => "pages#home"
-  root :to => "pages#home"
+  #root :to => "pages#home"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
