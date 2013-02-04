@@ -21,8 +21,9 @@ test:
 production:
   adapter: postrgesql
   encoding: unicode
-  database:
-  username:
-  password:
-  port:
+  database: d4djlab2aaamog
+  username: vpvamknrjncqnp
+  password: MKjF-v72ZaEvyLYE5RA9uWov4I
+  host: ec2-54-243-194-40.compute-1.amazonaws.com
+  port: 5432
   pool: 5
