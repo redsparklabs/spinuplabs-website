@@ -1,5 +1,5 @@
 SpinupBlog::Application.routes.draw do
-  root :to => "pages#home"
+
   match "/home" => "posts#home"
   match "/spinup" => "pages#spinup"
   match "/team" => "pages#team"
@@ -9,6 +9,9 @@ SpinupBlog::Application.routes.draw do
   postmarkdown :as => :blog
   match "/pages/*id" => 'pages#show', :as => :page, :format => false
   match "/posts/archive" => "posts#archive"
+  match "/" => "pages#home"
+  root :to => "pages#home"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
