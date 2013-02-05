@@ -1,0 +1,42 @@
+<div class="container_12">
+	<div class="grid_8">
+		<h1>Contact Us</h1>
+		<p>Want to hire us? We love to work with great clients and make their ideas become a reality.</p>
+<% if flash[:alert] %>
+  <p class='message error rounded clearfix'><%= flash[:alert] %></p>
+<% end %>
+		<%= form_for @message, :url => contact_path, :html => { :class => 'standard'  } do |form| %>
+			<div class="field">
+      				<strong><%= form.label :name %></strong>
+      				<%= form.text_field :name, :size => '45', :class => 'textbox rounded shadow hovershadow' %>
+			</div>
+			<div class="field">
+      				<strong><%= form.label :company %></strong>
+      				<%= form.text_field :company, :size => '45', :class => 'textbox rounded shadow hovershadow' %>
+			</div>
+			<div class="field">
+      				<strong><%= form.label :email %></strong>
+      				<%= form.text_field :email, :size => '45', :class => 'textbox rounded shadow hovershadow' %>
+			</div>
+			<div class="field">
+      				<strong><%= form.label :phone %></strong>
+      				<%= form.text_field :phone, :size => '45', :class => 'textbox rounded shadow hovershadow' %>
+			</div>
+			<div class="field">
+      				<strong><%= form.label 'How can we help?' %></strong>
+      				<%= form.text_area :body, :rows => '8', :cols => '50', :class => 'textarea rounded shadow hovershadow' %>
+			</div>
+			<div class="field">
+				    <%= form.submit "Submit" %>
+			</div>
+		<% end %>
+	</div>
+	<div class="grid_4">
+		<h3>Phone Number</h3>
+		<p>(866) 985-6877</p>
+		<h3>Email</h3>
+		<p>hello (at) spinuplabs.com</p>
+		<h3>Follow Us</h3>
+		<p><a href="http://twitter.com/#!/spinuplabs">@spinuplabs</a></p>
+	</div>
+</div>

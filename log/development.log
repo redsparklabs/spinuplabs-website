@@ -62502,3 +62502,2237 @@ ActionController::RoutingError (No route matches [GET] "/assets/slogo-backdrop.p
 
 
   Rendered /Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-04 20:57:18 -0600
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/spinup (60.3ms)
+Compiled clearlymodern/960.css  (0ms)  (pid 11136)
+Compiled clearlymodern/screen.css  (0ms)  (pid 11136)
+Compiled clearlymodern/themes/spin-up.css  (0ms)  (pid 11136)
+Compiled clearlymodern/jquery.fancybox-1.3.4.css  (0ms)  (pid 11136)
+Compiled jquery.js  (2ms)  (pid 11136)
+Compiled jquery_ujs.js  (0ms)  (pid 11136)
+Compiled clearlymodern/general.js  (0ms)  (pid 11136)
+Compiled clearlymodern/jquery.cycle.all.min.js  (0ms)  (pid 11136)
+Compiled clearlymodern/jquery.fancybox-1.3.4.pack.js  (0ms)  (pid 11136)
+Compiled clearlymodern/jquery.tweet.js  (0ms)  (pid 11136)
+Compiled clearlymodern/superfish-combined.js  (0ms)  (pid 11136)
+Compiled clearlymodern/application.js  (83ms)  (pid 11136)
+Completed 200 OK in 225ms (Views: 206.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 20:57:18 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 20:57:18 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 20:57:18 -0600
+Served asset /clearlymodern/themes/spin-up.css - 200 OK (2ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 20:57:18 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 20:57:18 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 20:57:18 -0600
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 20:57:18 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 20:57:18 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 20:57:18 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 20:57:18 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 20:57:19 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/slogo-backdrop.png" for 127.0.0.1 at 2013-02-04 20:57:19 -0600
+Served asset /slogo-backdrop.png - 404 Not Found (6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/slogo-backdrop.png"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-02-04 20:57:23 -0600
+Processing by ContactController#new as HTML
+ERROR: compiling _app_views_contact_new_html_erb__467282080481902974_70118417169800 RAISED /Users/bweber/Documents/work/spinuplabs/site/app/views/contact/new.html.erb:45: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/bweber/Documents/work/spinuplabs/site/app/views/contact/new.html.erb:47: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_contact_new_html_erb__467282080481902974_70118417169800(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "contact/new";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div class="container_12">
+	<div class="grid_8">
+		<h1>Contact Us</h1>
+		<p>Want to hire us? We love to work with great clients and make their ideas become a reality.</p>
+		');@output_buffer.append=  form_for @message, :url => contact_path, :class => 'standard' do |form| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('			<div class="field">
+      				');@output_buffer.append= ( form.label :name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      				');@output_buffer.append= ( form.text_field :name, :class => 'textbox rounded shadow hovershadow' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div>
+			<div class="field">
+				<label><strong>Name</strong></label>
+				<input type="text\'" size="45" name="name" id="name" class="textbox rounded shadow hovershadow">
+			</div>
+			<div class="field">
+				<label><strong>Company</strong></label>
+				<input type="text\'" size="45" name="company" id="company" class="textbox rounded shadow hovershadow">
+			</div>
+			<div class="field">
+				<label><strong>Email</strong></label>
+				<input type="text\'" size="45" name="email" id="email" class="textbox rounded shadow hovershadow">
+			</div>
+			<div class="field">
+				<label><strong>Phone</strong></label>
+				<input type="text\'" size="45" name="phone" id="phone" class="textbox rounded shadow hovershadow">
+			</div>
+			<div class="field">
+				<label><strong>How can we help?</strong></label>
+				<textarea size="45" name="body" id="body" class="textbox rounded shadow hovershadow"></textarea>
+			</div>
+			<div class="field">
+				    ');@output_buffer.append= ( form.submit "Send" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div>
+		</form>
+	</div>
+	<div class="grid_4">
+		<h3>Phone Number</h3>
+		<p>(866) 985-6877</p>
+		<h3>Email</h3>
+		<p>hello@spinuplabs.com</p>
+		<h3>Follow Us</h3>
+		<p>@spinuplabs</p>
+	</div>
+</div>
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/template.rb:297:in `module_eval'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/template.rb:297:in `compile'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/template.rb:232:in `compile!'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/template.rb:144:in `block in render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/notifications.rb:125:in `instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/template.rb:143:in `render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activerecord-3.2.9/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:414:in `_run__45659415168073839__process_action__2729291098044176560__callbacks'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activerecord-3.2.9/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/base.rb:121:in `process'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal.rb:246:in `block in action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.3/lib/sass/plugin/rack.rb:54:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activerecord-3.2.9/lib/active_record/query_cache.rb:64:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activerecord-3.2.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `_run__2830389245216680551__call__591816877440146856__callbacks'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/railties-3.2.9/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/railties-3.2.9/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/railties-3.2.9/lib/rails/rack/logger.rb:16:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/static.rb:62:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/railties-3.2.9/lib/rails/engine.rb:479:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/railties-3.2.9/lib/rails/application.rb:223:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/railties-3.2.9/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered contact/new.html.erb within layouts/spinup (1.0ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (/Users/bweber/Documents/work/spinuplabs/site/app/views/contact/new.html.erb:45: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/bweber/Documents/work/spinuplabs/site/app/views/contact/new.html.erb:47: syntax error, unexpected $end, expecting keyword_end):
+    42: 	</div>
+    43: </div>
+  actionpack (3.2.9) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.9) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.9) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.9) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.9) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.9) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.9) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.9) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.9) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.9) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.9) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.9) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.9) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.9) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.9) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.9) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.9) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:414:in `_run__45659415168073839__process_action__2729291098044176560__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  sass (3.2.3) lib/sass/plugin/rack.rb:54:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__2830389245216680551__call__591816877440146856__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (48.6ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-02-04 20:58:04 -0600
+Processing by ContactController#new as HTML
+  Rendered contact/new.html.erb within layouts/spinup (14.1ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 20:58:04 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 20:58:04 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 20:58:04 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 20:58:04 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 20:58:04 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 20:58:04 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 20:58:04 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 20:58:04 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 20:58:04 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 20:58:04 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 20:58:04 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slogo-backdrop.png" for 127.0.0.1 at 2013-02-04 20:58:04 -0600
+Served asset /slogo-backdrop.png - 404 Not Found (8ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/slogo-backdrop.png"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-02-04 20:59:49 -0600
+Processing by ContactController#new as HTML
+  Rendered contact/new.html.erb within layouts/spinup (2.5ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 20:59:49 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 20:59:49 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 20:59:49 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 20:59:49 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 20:59:49 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 20:59:49 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 20:59:49 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 20:59:49 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 20:59:49 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 20:59:49 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 20:59:49 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slogo-backdrop.png" for 127.0.0.1 at 2013-02-04 20:59:49 -0600
+Served asset /slogo-backdrop.png - 404 Not Found (7ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/slogo-backdrop.png"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-02-04 21:00:06 -0600
+Processing by ContactController#new as HTML
+  Rendered contact/new.html.erb within layouts/spinup (2.5ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:00:07 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:00:07 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:00:07 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:00:07 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:00:07 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:00:07 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:00:07 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:00:07 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:00:07 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:00:07 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:00:07 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-02-04 21:00:47 -0600
+Processing by ContactController#new as HTML
+  Rendered contact/new.html.erb within layouts/spinup (2.4ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:00:47 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:00:47 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:00:47 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:00:47 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:00:47 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:00:47 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:00:47 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:00:47 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:00:47 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:00:47 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:00:47 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-02-04 21:01:05 -0600
+Processing by ContactController#new as HTML
+  Rendered contact/new.html.erb within layouts/spinup (2.6ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:01:06 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:01:06 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:01:06 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:01:06 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:01:06 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:01:06 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:01:06 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:01:06 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:01:06 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:01:06 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:01:06 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-02-04 21:02:27 -0600
+Processing by ContactController#new as HTML
+  Rendered contact/new.html.erb within layouts/spinup (2.5ms)
+Completed 200 OK in 10ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:02:28 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:02:28 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:02:28 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:02:28 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:02:28 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:02:28 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:02:28 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:02:28 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:02:28 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:02:28 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:02:28 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-02-04 21:06:53 -0600
+Processing by ContactController#new as HTML
+  Rendered contact/new.html.erb within layouts/spinup (5.1ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:06:53 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:06:53 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:06:53 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:06:53 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:06:53 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:06:53 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:06:53 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:06:53 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:06:53 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:06:53 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:06:53 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-02-04 21:07:20 -0600
+Processing by ContactController#new as HTML
+ERROR: compiling _app_views_contact_new_html_erb__467282080481902974_70118385483140 RAISED /Users/bweber/Documents/work/spinuplabs/site/app/views/contact/new.html.erb:23: syntax error, unexpected tSTRING_BEG, expecting ')'
+...er.append= ( form.label :body 'How can we help?' );@output_b...
+...                               ^
+Function body:           def _app_views_contact_new_html_erb__467282080481902974_70118385483140(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "contact/new";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div class="container_12">
+	<div class="grid_8">
+		<h1>Contact Us</h1>
+		<p>Want to hire us? We love to work with great clients and make their ideas become a reality.</p>
+		');@output_buffer.append=  form_for @message, :url => contact_path, :html => { :class => 'standard'  } do |form| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('			<div class="field">
+      				<strong>');@output_buffer.append= ( form.label :name );@output_buffer.safe_concat('</strong>
+      				');@output_buffer.append= ( form.text_field :name, :size => '45', :class => 'textbox rounded shadow hovershadow' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div>
+			<div class="field">
+      				<strong>');@output_buffer.append= ( form.label :company );@output_buffer.safe_concat('</strong>
+      				');@output_buffer.append= ( form.text_field :company, :size => '45', :class => 'textbox rounded shadow hovershadow' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div>
+			<div class="field">
+      				<strong>');@output_buffer.append= ( form.label :email );@output_buffer.safe_concat('</strong>
+      				');@output_buffer.append= ( form.text_field :email, :size => '45', :class => 'textbox rounded shadow hovershadow' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div>
+			<div class="field">
+      				<strong>');@output_buffer.append= ( form.label :phone );@output_buffer.safe_concat('</strong>
+      				');@output_buffer.append= ( form.text_field :phone, :size => '45', :class => 'textbox rounded shadow hovershadow' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div>
+			<div class="field">
+      				<strong>');@output_buffer.append= ( form.label :body 'How can we help?' );@output_buffer.safe_concat('</strong>
+      				');@output_buffer.append= ( form.text_area :body, :rows => '8', :cols => '50', :class => 'textarea rounded shadow hovershadow' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div>
+			<div class="field">
+				<label><strong>Name</strong></label>
+				<input type="text\'" size="45" name="name" id="name" class="textbox rounded shadow hovershadow">
+			</div>
+			<div class="field">
+				<label><strong>Company</strong></label>
+				<input type="text\'" size="45" name="company" id="company" class="textbox rounded shadow hovershadow">
+			</div>
+			<div class="field">
+				<label><strong>Email</strong></label>
+				<input type="text\'" size="45" name="email" id="email" class="textbox rounded shadow hovershadow">
+			</div>
+			<div class="field">
+				<label><strong>Phone</strong></label>
+				<input type="text\'" size="45" name="phone" id="phone" class="textbox rounded shadow hovershadow">
+			</div>
+			<div class="field">
+				<label><strong>How can we help?</strong></label>
+				<textarea cols="50"  rows="6" name="body" id="body" class="textarea rounded shadow hovershadow"></textarea>
+			</div>
+			<div class="field">
+				    ');@output_buffer.append= ( form.submit "Send" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('			</div>
+');		 end 
+@output_buffer.safe_concat('	</div>
+	<div class="grid_4">
+		<h3>Phone Number</h3>
+		<p>(866) 985-6877</p>
+		<h3>Email</h3>
+		<p>hello@spinuplabs.com</p>
+		<h3>Follow Us</h3>
+		<p><a href="http://twitter.com/#!/spinuplabs">@spinuplabs</a></p>
+	</div>
+</div>
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/template.rb:297:in `module_eval'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/template.rb:297:in `compile'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/template.rb:232:in `compile!'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/template.rb:144:in `block in render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/notifications.rb:125:in `instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/template.rb:143:in `render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activerecord-3.2.9/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:414:in `_run__45659415168073839__process_action__2729291098044176560__callbacks'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `instrument'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activerecord-3.2.9/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/base.rb:121:in `process'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_controller/metal.rb:246:in `block in action'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.3/lib/sass/plugin/rack.rb:54:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activerecord-3.2.9/lib/active_record/query_cache.rb:64:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activerecord-3.2.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `_run__2830389245216680551__call__591816877440146856__callbacks'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/railties-3.2.9/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/railties-3.2.9/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/railties-3.2.9/lib/rails/rack/logger.rb:16:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/activesupport-3.2.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/static.rb:62:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/railties-3.2.9/lib/rails/engine.rb:479:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/railties-3.2.9/lib/rails/application.rb:223:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/railties-3.2.9/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered contact/new.html.erb within layouts/spinup (1.3ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (/Users/bweber/Documents/work/spinuplabs/site/app/views/contact/new.html.erb:23: syntax error, unexpected tSTRING_BEG, expecting ')'
+...er.append= ( form.label :body 'How can we help?' );@output_b...
+...                               ^):
+    20:       				<%= form.text_field :phone, :size => '45', :class => 'textbox rounded shadow hovershadow' %>
+    21: 			</div>
+    22: 			<div class="field">
+    23:       				<strong><%= form.label :body 'How can we help?' %></strong>
+    24:       				<%= form.text_area :body, :rows => '8', :cols => '50', :class => 'textarea rounded shadow hovershadow' %>
+    25: 			</div>
+    26: 			<div class="field">
+  actionpack (3.2.9) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.9) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.9) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.9) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.9) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.9) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.9) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.9) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.9) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.9) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.9) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.9) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.9) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.9) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.9) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.9) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.9) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:414:in `_run__45659415168073839__process_action__2729291098044176560__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  sass (3.2.3) lib/sass/plugin/rack.rb:54:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__2830389245216680551__call__591816877440146856__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.4ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-02-04 21:08:01 -0600
+Processing by ContactController#new as HTML
+  Rendered contact/new.html.erb within layouts/spinup (4.8ms)
+Completed 200 OK in 53ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:08:01 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:08:01 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:08:01 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:08:01 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:01 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:01 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:01 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:01 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:01 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:01 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:01 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-02-04 21:08:28 -0600
+Processing by ContactController#new as HTML
+  Rendered contact/new.html.erb within layouts/spinup (4.9ms)
+Completed 200 OK in 12ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:08:28 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:08:28 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:08:28 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:28 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:08:28 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:28 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:28 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:28 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:28 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:28 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:28 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2013-02-04 21:08:49 -0600
+Processing by ContactController#new as HTML
+  Rendered contact/new.html.erb within layouts/spinup (5.2ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:08:49 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:08:49 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:49 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:08:49 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:49 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:08:49 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:49 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:49 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:50 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:50 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:08:50 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:09:12 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"", "body"=>"not sure"}, "commit"=>"Send"}
+  Rendered contact/new.html.erb within layouts/spinup (4.0ms)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:09:12 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:09:12 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:09:12 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:09:12 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:09:12 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:09:12 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:09:12 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:09:12 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:09:12 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:09:12 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:09:12 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:10:14 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"", "body"=>"not sure"}, "commit"=>"Send"}
+  Rendered contact/new.html.erb within layouts/spinup (5.1ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:10:14 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:10:14 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:10:14 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:10:14 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:10:14 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:10:14 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:10:14 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:10:14 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:10:14 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:10:14 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:10:14 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:10:22 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+  Rendered contact/new.html.erb within layouts/spinup (3.7ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:10:22 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:10:22 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:10:22 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:10:22 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:10:22 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:10:22 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:10:22 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:10:22 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:10:22 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:10:22 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:10:22 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:16:09 -0600
+Connecting to database specified by database.yml
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+  Rendered contact/new.html.erb within layouts/spinup (5.3ms)
+Completed 200 OK in 91ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:16:10 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:16:10 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:16:10 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:16:10 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:16:10 -0600
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:16:10 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:16:10 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:16:10 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:16:10 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (47ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:16:10 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:16:10 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (2ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:16:40 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+  Rendered contact/new.html.erb within layouts/spinup (4.2ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:16:40 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:16:40 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:16:40 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:16:40 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:16:40 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:16:40 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:16:40 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:16:40 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:16:40 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:16:40 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:16:40 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:17:07 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+  Rendered contact/new.html.erb within layouts/spinup (4.1ms)
+Completed 200 OK in 18ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:17:08 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:17:08 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:17:08 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:17:08 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:17:08 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:17:08 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:17:08 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:17:08 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:17:08 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:17:08 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:17:08 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:17:29 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 9ms
+
+ActionView::MissingTemplate (Missing template contact/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee, :haml]}. Searched in:
+  * "/Users/bweber/Documents/work/spinuplabs/site/app/views"
+  * "/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/postmarkdown-0.0.4/app/views"
+  * "/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/kaminari-0.14.1/app/views"
+  * "/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/postmarkdown-0.0.4/app/views"
+):
+  actionpack (3.2.9) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.9) lib/action_view/lookup_context.rb:109:in `find'
+  actionpack (3.2.9) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.9) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.9) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.9) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.9) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.9) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.9) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.9) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.9) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:414:in `_run__1328398842628147974__process_action__3819518417443866746__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  sass (3.2.3) lib/sass/plugin/rack.rb:54:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__1644206143639289402__call__1232640044704478256__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:18:45 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 9ms
+
+ActionView::MissingTemplate (Missing template contact/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee, :haml]}. Searched in:
+  * "/Users/bweber/Documents/work/spinuplabs/site/app/views"
+  * "/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/postmarkdown-0.0.4/app/views"
+  * "/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/kaminari-0.14.1/app/views"
+  * "/Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/postmarkdown-0.0.4/app/views"
+):
+  actionpack (3.2.9) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.9) lib/action_view/lookup_context.rb:109:in `find'
+  actionpack (3.2.9) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.9) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.9) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.9) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.9) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.9) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.9) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.9) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.9) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.9) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:414:in `_run__1328398842628147974__process_action__3819518417443866746__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.9) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.9) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.9) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.9) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.9) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  sass (3.2.3) lib/sass/plugin/rack.rb:54:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__1644206143639289402__call__1232640044704478256__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/bweber/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/bweber/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:20:07 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+  Rendered contact/new.html.erb within layouts/spinup (4.9ms)
+Completed 200 OK in 18ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:20:07 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:20:07 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:20:07 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:20:07 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:20:07 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:20:07 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:20:07 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:20:07 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:20:07 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:20:07 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:20:07 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:20:49 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+  Rendered contact/new.html.erb within layouts/spinup (3.8ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:20:49 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:20:49 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:20:49 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:20:49 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:20:49 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:20:49 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:20:49 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:20:49 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:20:49 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:20:49 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:20:49 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:23:22 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+  Rendered contact/new.html.erb within layouts/spinup (3.8ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:23:22 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:23:22 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:23:23 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:23:23 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:23:23 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:23:23 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:23:23 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:23:23 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:23:23 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:23:23 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:23:23 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:23:44 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+  Rendered contact/new.html.erb within layouts/spinup (5.1ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:23:45 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:23:45 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:23:45 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:23:45 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:23:45 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:23:45 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:23:45 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:23:45 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:23:45 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:23:45 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:23:45 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:24:32 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+  Rendered contact/new.html.erb within layouts/spinup (5.4ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:24:32 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:24:32 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:24:32 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:24:32 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:24:32 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:24:32 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:24:32 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:24:32 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:24:32 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:24:32 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:24:32 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:25:07 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+  Rendered contact/new.html.erb within layouts/spinup (5.1ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:25:07 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:25:07 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:25:07 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:25:07 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:25:07 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:25:07 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:25:07 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:25:07 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:25:07 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:25:07 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:25:07 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:25:51 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+  Rendered contact/new.html.erb within layouts/spinup (5.2ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:25:51 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:25:51 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:25:51 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:25:51 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:25:51 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:25:51 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:25:51 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:25:51 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:25:51 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:25:51 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:25:51 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:29:15 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+  Rendered contact/new.html.erb within layouts/spinup (4.0ms)
+Completed 200 OK in 17ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:29:15 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:29:15 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:29:15 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:29:15 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 21:29:15 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:29:15 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:29:15 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:29:15 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:29:15 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:29:15 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:29:15 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
+
+
+Started POST "/contact" for 127.0.0.1 at 2013-02-04 21:29:42 -0600
+Processing by ContactController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2O92ZrSqbZJp4tajwf4wlZdYs45dmMYTlttkp1gT+Q=", "message"=>{"name"=>"Brent Weber", "company"=>"SpinUp Labs", "email"=>"bweber@spinuplabs.com", "phone"=>"512-913-4098", "body"=>"not sure"}, "commit"=>"Submit"}
+  Rendered notifications_mailer/new_message.text.erb (0.7ms)
+
+Sent mail to bweber@spinuplabs.com (3700ms)
+Date: Mon, 04 Feb 2013 21:29:42 -0600
+From: bweber@spinuplabs.com
+To: bweber@spinuplabs.com
+Message-ID: <51107ca6ad0ac_2c723ff9a6f6deb836660@Brents-MacBook-Pro.local.mail>
+Subject: Spinup Labs Contact Request
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Name: Brent Weber
+
+Company: SpinUp Labs
+
+Email: bweber@spinuplabs.com
+
+Phone: 512-913-4098
+
+Body: not sure
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 4308ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-02-04 21:29:46 -0600
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/spinup (31.1ms)
+Completed 200 OK in 57ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 21:29:46 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/960.css?body=1" for 127.0.0.1 at 2013-02-04 21:29:46 -0600
+Served asset /clearlymodern/960.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/themes/spin-up.css?body=1" for 127.0.0.1 at 2013-02-04 21:29:46 -0600
+Served asset /clearlymodern/themes/spin-up.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.css?body=1" for 127.0.0.1 at 2013-02-04 21:29:46 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/screen.css?body=1" for 127.0.0.1 at 2013-02-04 21:29:46 -0600
+Served asset /clearlymodern/screen.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/general.js?body=1" for 127.0.0.1 at 2013-02-04 21:29:46 -0600
+Served asset /clearlymodern/general.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.cycle.all.min.js?body=1" for 127.0.0.1 at 2013-02-04 21:29:46 -0600
+Served asset /clearlymodern/jquery.cycle.all.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.fancybox-1.3.4.pack.js?body=1" for 127.0.0.1 at 2013-02-04 21:29:46 -0600
+Served asset /clearlymodern/jquery.fancybox-1.3.4.pack.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/jquery.tweet.js?body=1" for 127.0.0.1 at 2013-02-04 21:29:46 -0600
+Served asset /clearlymodern/jquery.tweet.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clearlymodern/superfish-combined.js?body=1" for 127.0.0.1 at 2013-02-04 21:29:46 -0600
+Served asset /clearlymodern/superfish-combined.js - 304 Not Modified (0ms)
