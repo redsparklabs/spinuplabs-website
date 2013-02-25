@@ -411,8 +411,8 @@ spinup-background.jpg: spinup-background-43e377711ab035812f9022ca89741b03.jpg
 spinup-background/index.jpg: spinup-background-43e377711ab035812f9022ca89741b03.jpg
 spinup-logo-trans.png: spinup-logo-trans-59b434d8ac847423feca91a8ca4b188f.png
 spinup-logo-trans/index.png: spinup-logo-trans-59b434d8ac847423feca91a8ca4b188f.png
-spinup-logo-white-trans.png: spinup-logo-white-trans-a4f1d997a961592f2c03dd1e30fbd82b.png
-spinup-logo-white-trans/index.png: spinup-logo-white-trans-a4f1d997a961592f2c03dd1e30fbd82b.png
+spinup-logo-white-trans.png: spinup-logo-white-trans-9594e3636082645ab4cf1f07035e0611.png
+spinup-logo-white-trans/index.png: spinup-logo-white-trans-9594e3636082645ab4cf1f07035e0611.png
 spup-logo.jpg: spup-logo-9bb4f58cd70d98fa817c81c05658e37c.jpg
 spup-logo/index.jpg: spup-logo-9bb4f58cd70d98fa817c81c05658e37c.jpg
 to-top.gif: to-top-2003eb9e3a060670dcb1b2ed38a9b5bf.gif
@@ -423,5 +423,5 @@ application.js: application-37d713aaab4e907b3300f2523875105e.js
 application/index.js: application-37d713aaab4e907b3300f2523875105e.js
 clearlymodern/application.js: clearlymodern/application-f672a82424d6ffcee953c8c01975cc7e.js
 clearlymodern/application/index.js: clearlymodern/application-f672a82424d6ffcee953c8c01975cc7e.js
-application.css: application-3f0d89d434d33d582bac922e3cb88830.css
-application/index.css: application-3f0d89d434d33d582bac922e3cb88830.css
+application.css: application-f9df44d527ead370bf0cc071b7b85fe2.css
+application/index.css: application-f9df44d527ead370bf0cc071b7b85fe2.css

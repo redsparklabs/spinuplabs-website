@@ -2,6 +2,8 @@
 title: Ruby and MSCRM On-Premise
 author: Brent Weber
 email: bweber@redsparklabs.com
+keywords: Microsoft CRM, Ruby, Rails, Portal, Customer, XRM
+description: Simple script showing how easy it is to create a Ruby on Rails app with a MSCRM backend.
 ---
 
 ### Ruby is easier than PHP for lots of stuff ###

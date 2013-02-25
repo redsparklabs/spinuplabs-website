@@ -1,9 +1,12 @@
 class PostsController < ApplicationController
   #layout lambda { |controller| Postmarkdown::Config.options[:use_theme] ? 'postmarkdown' : 'application' }
-
   layout 'spinup'
+
   def show
     resource
+    $title = @resource.title
+    $keywords = @resource.keywords
+    $description = @resource.description
   end
 
   def home

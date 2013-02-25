@@ -3,6 +3,7 @@ class ContactController < ApplicationController
 
   def new
     @message = Message.new
+    $seo_title = "Contact Us"
   end
 
   def create

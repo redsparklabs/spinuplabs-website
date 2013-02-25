@@ -14,6 +14,7 @@ class Post
   def initialize(path)
     @path = path
     @date_str, @slug = File.basename(path).match(FILENAME_FORMAT).captures
+    $seo_title = "Nothing"
   end
 
   def to_param
@@ -57,6 +58,14 @@ class Post
 
   def email
     metadata[:email]
+  end
+
+  def keywords
+    metadata[:keywords]
+  end
+
+  def description
+    metadata[:description]
   end
 
   def date

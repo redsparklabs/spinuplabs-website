@@ -615,3 +615,13 @@ html[xmlns] .clearfix {
 	font-size: 20pt;
 	line-height: 26pt;
 }
+
+h2.callout {
+	font-size: 20pt;
+	line-height: 26pt;
+}
+
+h1.callout {
+	font-size: 30pt;
+	line-height: 36pt;
+}

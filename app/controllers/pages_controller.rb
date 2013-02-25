@@ -6,10 +6,20 @@ class PagesController < HighVoltage::PagesController
 
     def home
         @posts = latest_from_blog
+        $title = "Home"
     end
 
     def spinup
         @posts = latest_from_blog
+        $title = "Why SpinUp Labs"
+    end
+
+    def work
+        $title = "Past Work"
+    end
+
+    def team
+        $title = "The Team"
     end
 
     protected

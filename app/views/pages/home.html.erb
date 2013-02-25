@@ -1,90 +1,155 @@
-             <div id="callout" class="clearfix">
-             <div class="container_12">
-               <div class="grid_12">
-                      <h1>It's more than a website or app, it's your business!</h1>
-                      <hr />
+            <div class="container_12">
+                <div id="callout" class="clearfix">
+                    <div class="grid_12">
+                        <!--<h1 class="callout">It's more than a website or app, it's your business!</h1>-->
+                        <h1 class="callout center">Your business deserves top-notch execution</h1>
+                        <h2>It's not just a website or app, it's your business</h2>
+                        <h2 class="callout">We build startups</h2>
+                        <h2 class="callout">We help established companies get lean</h2>
+                        <hr />
+                    </div>
                 </div>
-             </div>
-           </div>
-           <div class="container_12">
-            <div class="grid_12">
-               <p> SpinUp Labs is a Web Design and Development Shop.  We use technology to <strong>build businesses</strong>. We specialize in developing solutions based on lean principles.  We believe Customer Development is the foundation your company should be built on.
-               </p>
-                      <h3>We build startups</h3>
-                       <h3>We help established companies get lean</h3>
-           </div>
-           </div>
-             <div class="container_12">
+            </div>
+
+            <div class="container_12">
+                <div class="grid_12">
+                    <!--<p> SpinUp Labs is a Web Design and Development Shop.  We use technology to <strong>build businesses</strong>. We specialize in developing solutions based on lean principles.  We believe Customer Development is the foundation your company should be built on.
+                    </p>-->
+                </div>
+            </div>
+
+            <div class="container_12">
+                <div class="grid_12">
+                    <!--<div class="grid_7 alpha">
+                        <p><h3>The Perfect Client</h3>
+                        <ul>
+                            <li>You take your business seriously</li>
+                            <li>You spend money to make money</li>
+                            <li>You have a realisitic budget and timeline</li>
+                            <li>You like the latest tech, but know the bottom line is more important</li>
+                            <li>You expect your business partners to work as hard as you do</li>
+                            <li>You value clear communication</li>
+                            <li>You find humor in everyday life</li>
+                        </ul>-->
+                        <h3>Is this you?</h3>
+                        <div class='contactbutton'>
+                            <%= link_to 'Hire Us','/contact' %>
+                            <p>We are easy to work with</p>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <div class="grid_12">
+                        <div class="grid_3 alpha">
+                            <h3>Product Strategy</h3>
+                            <ul>
+                                <li>Lean Thinking</li>
+                                <li>Customer Interviews</li>
+                                <li>Business Model Generation</li>
+                                <li>Customer Development</li>
+                                <li>Product Roadmap</li>
+                            </ul>
+                        </div>
+                        <div class="grid_3">
+                            <h3>User Experience (UX)</h3>
+                            <ul>
+                                <li>User Testing</li>
+                                <li>Conceptual Validation</li>
+                                <li>Heuristic Analysis</li>
+                                <li>User Stories</li>
+                            </ul>
+                        </div>
+                        <div class="grid_3">
+                            <h3>Development</h3>
+                            <ul>
+                                <li>Ruby on Rails</li>
+                                <li>PHP</li>
+                                <li>Agile</li>
+                                <li>Iterative</li>
+                            </ul>
+                        </div>
+                        <div class="grid_3 omega">
+                            <h3>Digital Marketing</h3>
+                            <ul>
+                                <li>Customer Acquisition</li>
+                                <li>Iterative Marketing</li>
+                                <li>Social Media</li>
+                                <li>Branding</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--//grid_12-->
+            </div><!-- //container_12-->
+
+            <div class="container_12 clearfix">
+                <div class="widget">
+                    <div class="grid_12">
+                        <h2 class="widgettitle">Trusted By</h2>
+                    </div>
+                    <div class="grid_3 alpha center">
+                        BallotBook
+                    </div>
+                    <div class="grid_3 center">
+                        LetterPlan
+                    </div>
+                    <div class="grid_3 center">
+                        transapi.io
+                    </div>
+                    <div class="grid_3 omega center">
+                        Publius
+                    </div>
+                    <div class="grid_12">
+                        <hr />
+                    </div>
+                </div>
+            </div><!--//container_12-->
+
+            <div class="container_12">
                 <div class="grid_8">
-                	<div class="grid_7 alpha">
-                    <p><h3>The Perfect Client</h3>
-                    	<ul>
-                    		<li>You take your business seriously</li>
-                    		<li>You spend money to make money</li>
-                    		<li>You have a realisitic budget and timeline</li>
-                    		<li>You like the latest tech, but know the bottom line is more important</li>
-                    		<li>You expect your business partners to work as hard as you do</li>
-                    		<li>You value clear communication</li>
-                    		<li>You find humor in everyday life</li>
-                    	</ul>
-                      <h3>Is this you?</h3>
-                      <div class='contactbutton'><%= link_to 'Contact Us','/contact' %><p>We are easy to work with</p></div>
-                    </p>
-                  </div>
-
-                </div><!--//grid_8-->
-
-
-
-                <div class="grid_4">
-
                     <div class="widget">
-                       <h3 class="widgettitle">From the Blog</h3>
+                        <h3 class="widgettitle">Latest From the Blog</h3>
+                            <div id="blog_recent">
+                    	       <ul>
+                    	       <% @posts.each do |post| %>
+                    	           <li class="clearfix">
+                    	               <p><strong><%= link_to post.title, post %></strong><br />
+                    		  <span class="postmeta"><%= post.date %></span><br />
+                    		  <%= post.summary_html %>
+                    	           </li>
+                	       <% end %>
+                    	       </ul>
+                    	   </div>
+                        </div>
                     </div>
-                    <div class="widget">
-                    	<div id="blog_recent">
-                    		<ul>
-                    			<% @posts.each do |post| %>
-                    			<li class="clearfix">
-                    				<p><strong><%= link_to post.title, post %></strong><br />
-                    				<span class="postmeta"><%= post.date %></span><br />
-                    				<%= post.summary_html %>
-                    			</li>
-                				<% end %>
-                    		</ul>
-                    	</div>
-                    </div>
-
-
-                    <div class="widget">
-                      <h3 class="widgettitle">Upcoming Classes</h3>
-                        <div id="education">
-              <ul>
-                              <!-- specify width/height when using HTML to help out older browsers slide HTML content -->
-                <li class="clearfix">
-                                  <p><strong>Lean 121 - Startup Metrics for Founders</strong><br />
-                                  <span class="postmeta">February 21, 2013 7-9pm, TechRanch Austin</span><br />
-                                  This class focuses on a new way of looking at metrics that will help make aspiring entrepreneurs magnitudes more effective.</p>
-                                </li>
-                                <li class="clearfix">
-                                  <p><strong>Lean Startup Machine Workshop</strong><br />
+                    <div class="grid_4">
+                        <div class="widget">
+                            <h3 class="widgettitle">Upcoming Classes</h3>
+                            <div id="education">
+                                <ul>
+                                    <!-- specify width/height when using HTML to help out older browsers slide HTML content -->
+                                    <li class="clearfix">
+                                        <p><strong>Lean 121 - Startup Metrics for Founders</strong><br />
+                                        <span class="postmeta">February 21, 2013 7-9pm, TechRanch Austin</span><br />
+                                        This class focuses on a new way of looking at metrics that will help make aspiring entrepreneurs magnitudes more effective.</p>
+                                    </li>
+                                    <li class="clearfix">
+                                        <p><strong>Lean Startup Machine Workshop</strong><br />
                                   	<span class="postmeta">March 22-24th, Rackspace Austin</span><br />
                                   	3 day instensive workshop focused on teaching and practicing the Customer Development part of Lean Startup methodology.</p>
-                                </li>
-              </ul>
-            </div>
-                    </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--//grid_4-->
 
+                    <div class="clear"></div><!--//clear columns-->
 
-                </div><!--//grid_4-->
-
-
-
-                <div class="clear"></div><!--//clear columns-->
-
-                <div class="grid_4">
-                  <p class="quote">
-                       We were lost in vanity metrics and feature overload, until SpinUp Labs helped us get lean and focused.  Now we have product/market fit and are almost ready to light the rocket!</p>
+                    <div class="grid_4">
+                        <p class="quote">
+                            We were lost in vanity metrics and feature overload, until SpinUp Labs helped us get lean and focused.  Now we have product/market fit and are almost ready to light the rocket!</p>
                         <small class="right">Karthik Angam - <a href="#">CloudPoint Storage Solutions</a></small>
+                    </div>
                 </div><!--//grid_12-->
             </div><!-- //container_12 -->

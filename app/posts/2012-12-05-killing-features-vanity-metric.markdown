@@ -2,6 +2,8 @@
 title: Killing Features is a Vanity Metric
 author: Brent Weber
 email: bweber@redsparklabs.com
+keywords:
+description:
 ---
 
 Too many lean startups brag about how quickly they kill features.  Like feature kill count is a valid measurement of how lean you are.  Killing features is great if you are taking action based on valid data, or significant feedback.  Killing a feature just because one customer doesn't like it, is just wasting time and padding your vanity stats.
