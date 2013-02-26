@@ -2,16 +2,16 @@ class PagesController < HighVoltage::PagesController
   #before_filter :authenticate
   #layout :layout_for_page
 
-    layout 'spinup'
+    layout 'default'
 
     def home
         @posts = latest_from_blog
         $title = "Home"
     end
 
-    def spinup
+    def about
         @posts = latest_from_blog
-        $title = "Why SpinUp Labs"
+        $title = "About Us"
     end
 
     def work

@@ -1,5 +1,5 @@
 class ContactController < ApplicationController
-  layout 'spinup'
+  layout 'default'
 
   def new
     @message = Message.new

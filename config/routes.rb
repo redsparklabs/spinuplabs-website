@@ -1,8 +1,8 @@
 SpinupBlog::Application.routes.draw do
 
   match "/home" => "posts#home"
-  match "/spinup" => "pages#spinup"
-  match "/team" => "pages#team"
+  match "/about" => "pages#about"
+  #match "/team" => "pages#team"
   #match "/contact" => "pages#contact"
   match '/contact' => 'contact#new', :as => 'contact', :via => :get
   match '/contact' => 'contact#create', :as => 'contact', :via => :post

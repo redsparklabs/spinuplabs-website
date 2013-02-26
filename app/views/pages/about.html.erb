@@ -1,0 +1,85 @@
+<div class="row">
+	<div class="twelve columns">
+		<h2>It makes good business sense to work with us!</h2>
+	</div>
+	<div class="eight columns">
+                      <ul class="iconlist clean">
+                          <li class="clearfix">
+                              <img src="/assets/icons/bargraph32.png" alt="Icon" class="left" />
+                              <h3><a href="#">Data Driven</a></h3>
+                                <p>We believe that data is always right. The most aesthetically beautiful application is only valuable if your numbers are going up. We test and adjust until you have both.</p>
+                            </li>
+                            <li class="clearfix">
+                              <img src="/assets/icons/comment32.png" alt="Icon" class="left" />
+                              <h3>Transparency and Communication</h3>
+                                <p>We believe you should know exactly what is happening with your project at all times. We share our code, use collaborative project management tools and talk to you daily to insure that we’re all on the same page.</p>
+                            </li>
+                            <li class="clearfix">
+                              <img src="/assets/icons/risegraph32.png" alt="Icon" class="left" />
+                              <h3>Experience</h3>
+                                <p>Not only are our Project Managers excited about new projects, they’ve also directed development on 10+ projects each. Their institutional knowledge and honed instincts help you to go in the right direction.</p>
+                            </li>
+                        </ul>
+	</div>
+	<div class="three columns">
+                    <div class="widget">
+                    	<h3 class="widgettitle">From the Blog</h3>
+                    </div>
+                    <div class="widget">
+                    	<div id="blog_recent">
+                    		<ul>
+                    			<% @posts.each do |post| %>
+                    			<li class="clearfix">
+                    				<p><strong><%= link_to post.title, post %></strong><br />
+                    				<span class="postmeta"><%= post.date %></span><br />
+                    				<%= post.summary_html %>
+                    			</li>
+                			<% end %>
+                    		</ul>
+                    	</div>
+                    </div>
+       </div>
+</div>
+<!--<div class="row">
+  <h3>Our Team</h3>
+      <div class="two columns">
+        <%= image_tag 'brent-bio-photo.jpg', :class => 'left' %>
+      </div>
+      <div class="ten columns">
+        <h3>Brent Weber</h3>
+        <p>
+          Brent Weber is our Founder and Chief Craftsman who believes that software should not just work, but be well-crafted. He started SpinUp Labs because he wanted to build a company that he would be proud to work for and companies would love to work with.
+        </p>
+        <p>
+          Brent has been professionally developing for the web since 2001.
+        </p>
+    </div>
+</div>-->
+
+    <div class="row">
+      <h3>Community Involvement</h3>
+      <div class="twelve columns">
+        <h4>Lean Startup Machine Workshop</h4>
+        <p>
+          We organize and serve as mentors for the Lean Startup Machine workshops in Austin.   LSM is a 3 day instensive workshop focused on teaching and practicing the Customer Development part of Lean Startup methodology.
+        </p>
+
+        <h4>Lean 101 - Intro to Lean Methodologies</h4>
+        <p>
+          Basic 2 hour introduction to lean startup methodology and customer development.
+        </p>
+
+        <h4>Lean 111 - You Have an Idea, Here's What to Do Now</h4>
+        <p>
+          The class is focused on coaching startups as they progress from idea to product.
+        </p>
+
+        <h4>Lean 121 - Startup Metrics for Founders</h4>
+        <p>
+          This class focuses on a new way of looking at metrics that will help make aspiring entrepreneurs magnitudes more effective.
+        </p>
+
+      </div>
+    </div>
+  </div>
+
