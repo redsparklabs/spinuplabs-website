@@ -1,30 +1,23 @@
+            <div class="feature">
             <div class="row">
-                <div id="twelve columns" class="clearfix">
-                        <h1>We design and build amazing products</h1>
-                        <h4 class="subheader">We build startups</h4>
-                        <h4 class="subheader">We develop ideas</h4>
-                        <h4 class="subheader">We help established companies get efficient</h4>
-                        <h3>We build businesses!</h3>
-
+                <div class="twelve columns">
+                        <h1>We design and build amazing web apps</h1>
+                        <h4 class="subheader">for Startups</h4>
+                        <h4 class="subheader">for Established Companies</h4>
                 </div>
             </div>
 
-  <!-- Call to Action Panel -->
-  <div class="row">
-    <div class="twelve columns">
-
-      <div class="panel">
-
-        <div class="row">
-          <div class="nine columns">
-            <h4>We can help your team succeed!</h4>
-          </div>
-          <div class="three columns">
-            <%= link_to 'Get in Contact','/contact', :class => "radius button right" %>
-          </div>
+            <div class="row">
+                <div class="six columns">
+                    <h4>We can help your team succeed!</h4>
+                </div>
+                <div class="six columns">
+                    <%= link_to 'Hire Us','/contact', :class => "radius button left" %>
+                </div>
+            </div>
         </div>
-      </div>
 
+        <div class="services">
             <div class="row">
                 <div class="three columns">
                            <h4>Strategy</h4>
@@ -48,10 +41,10 @@
                 <div class="three columns">
                             <h4>Development</h4>
                             <ul>
-                                <li>Ruby on Rails</li>
-                                <li>PHP</li>
-                                <li>Agile</li>
-                                <li>Iterative</li>
+                                <li>Prototype</li>
+                                <li>Web App</li>
+                                <li>Enterprise</li>
+
                             </ul>
                 </div>
                 <div class="three columns">
@@ -64,18 +57,19 @@
                             </ul>
                 </div>
                 <hr />
-            </div><!--//grid_12-->
+            </div><!--//row-->
+        </div>
 
-            <div class="row">
+<!--            <div class="row">
                 <div class="eight columns">
                     <div class="widget">
                         <h3 class="widgettitle">Latest From the Blog</h3>
                             <div id="blog_recent">
                     	       <ul>
                     	       <% @posts.each do |post| %>
-                    	           <li class="clearfix">
-                    	               <p><strong><%= link_to post.title, post %></strong><br />
-                    		  <span class="postmeta"><%= post.date %></span><br />
+                    	           <li>
+                    	               <h3><%= link_to post.title, post %></h3>
+                    		  <h6 class="subheader"><%= post.date %></h6>
                     		  <%= post.summary_html %>
                     	           </li>
                 	       <% end %>
@@ -85,25 +79,19 @@
                     </div>
                     <div class="four columns">
                             <h4>Upcoming Classes</h4>
-                            <p>We don't just practice lean, we also teach it</p>
                             <div id="education">
                                 <ul>
-                                    <!-- specify width/height when using HTML to help out older browsers slide HTML content -->
-                                    <li class="clearfix">
-                                        <p><strong>Lean Startup Machine Workshop</strong><br />
-                                  	<span class="postmeta">March 22-24th, Rackspace Austin</span><br />
-                                  	3 day instensive workshop focused on teaching and practicing the Customer Development part of Lean Startup methodology.</p>
+                                    <li>
+                                        <h5>Lean Startup Machine Workshop</h5>
+                                        <h6 class="subheader">March 22-24th, Rackspace Austin</h6>
+                                        <p>
+                                  	     3 day instensive workshop focused on teaching and practicing the Customer Development part of Lean Startup methodology.
+                                        </p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                 </div>
 
-                <div class="row">
-                    <div class="four columns">
-                        <p class="quote">
-                            We were lost in vanity metrics and feature overload, until SpinUp Labs helped us get lean and focused.  Now we have product/market fit and are almost ready to light the rocket!</p>
-                        <small class="right">Karthik Angam - <a href="#">CloudPoint Storage Solutions</a></small>
-                    </div>
-                </div><!--//grid_12-->
-            </div>
+
+            </div>-->

@@ -1,7 +1,7 @@
 
 .post
-  %h2.entry-title= link_to post.title, post
-  %p.postmeta
+  %h3= link_to post.title, post
+  %h6.subheader
     Posted on Friday, Nov 22, 2012
   .entry-content.clearfix
     - if post.image
@@ -11,5 +11,5 @@
       = link_to 'Read More&hellip;'.html_safe, post
     - else
       ~ post.content_html
-  %p.postmeta
+  %h6.subheader
     18 Comments | Tags: Design, Entrepreneur

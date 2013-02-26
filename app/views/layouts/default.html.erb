@@ -22,11 +22,11 @@
 		<%= csrf_meta_tags %>
 
 </head>
-<body>
+<body class="<%= params[:action]%>">
 
   <!-- Header and Nav -->
 
-  <div class="row">
+  <div class="row header">
     <div class="three columns">
       <h1><img src="<%= image_path "spinup-logo-trans.png" %>" /></h1>
     </div>
@@ -87,18 +87,18 @@
 
   <footer class="row">
     <div class="twelve columns">
-      <hr />
+    	<hr />
       <div class="row">
         <div class="six columns">
           <p>&copy; Copyright&copy; 2013, SpinUp Labs</p>
         </div>
         <div class="six columns">
           <ul class="link-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-          </ul>
+	        <li><%= link_to 'Home','/' %></li>
+	        <!--<li><%= link_to 'Work','/work' %></li>-->
+	        <li><%= link_to 'Blog','/blog' %></li>
+	        <li><%= link_to 'About Us','/about' %></li>
+	        <li><%= link_to 'Hire Us','/contact' %></li>          </ul>
         </div>
       </div>
     </div>

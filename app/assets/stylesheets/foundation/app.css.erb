@@ -13,9 +13,41 @@
    Shared Styles
 ----------------------------------------- */
 body {
-	background-image: url('<%= image_path "main.png" %>');
-	background-repeat: repeat;
+	background-image: url('<%= image_path "spinup_interior_background.jpg" %>');
+	background-repeat: repeat-x;
 }
+
+body.home {
+	background-image: url('<%= image_path "spinup_background.jpg" %>');
+	background-repeat: repeat-x;
+}
+
+body .header {
+	height: 180px;
+}
+
+body.home .header {
+	height: 150px;
+}
+
+.feature {
+	height: 260px;
+}
+
+.services {
+	height: 270px;
+	padding-top: 50px;
+}
+
+.panel {
+	background-color: #f3eeea;
+	border: solid 1px #dddad5;
+}
+
+.home .panel {
+	display: none;
+}
+
 
 
 /* -----------------------------------------
