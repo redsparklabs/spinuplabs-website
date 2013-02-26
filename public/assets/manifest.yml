@@ -25,7 +25,13 @@ main.png: main-a5e84ddc2cfa74b7a8506c959ba98406.png
 main/index.png: main-a5e84ddc2cfa74b7a8506c959ba98406.png
 spinup-logo-trans.png: spinup-logo-trans-7504703f605747b8dacf9356fea2b408.png
 spinup-logo-trans/index.png: spinup-logo-trans-7504703f605747b8dacf9356fea2b408.png
-application.js: application-9492152d747dba41eb615f53d65fbb93.js
-application/index.js: application-9492152d747dba41eb615f53d65fbb93.js
-application.css: application-62211d6babd9c72977ae40a713f7fe55.css
-application/index.css: application-62211d6babd9c72977ae40a713f7fe55.css
+spinup_background.jpg: spinup_background-5144bfd9ea9032584050587e8e60ad9f.jpg
+spinup_background/index.jpg: spinup_background-5144bfd9ea9032584050587e8e60ad9f.jpg
+spinup_interior_background.jpg: spinup_interior_background-1d3506faee472482a7005246d4704c84.jpg
+spinup_interior_background/index.jpg: spinup_interior_background-1d3506faee472482a7005246d4704c84.jpg
+application.js: application-4c714812744eeed0f08409a1e38d5c99.js
+application/index.js: application-4c714812744eeed0f08409a1e38d5c99.js
+foundation/application.js: foundation/application-13974907034a593960e2ac3c23d93a21.js
+foundation/application/index.js: foundation/application-13974907034a593960e2ac3c23d93a21.js
+application.css: application-09891c7d5b7684244811fad1026c7055.css
+application/index.css: application-09891c7d5b7684244811fad1026c7055.css
