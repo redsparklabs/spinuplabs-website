@@ -70,6 +70,8 @@ GEM
       nokogiri
       rails (~> 3.0)
       rdiscount
+    puma (1.6.3)
+      rack (~> 1.2)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -130,6 +132,7 @@ DEPENDENCIES
   jquery-rails
   pg
   postmarkdown
+  puma
   rails (= 3.2.9)
   sass-rails (~> 3.2.3)
   therubyracer
