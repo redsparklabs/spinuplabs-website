@@ -2,7 +2,7 @@
 title: Context.io Demo - List Contacts
 author: Brent Weber
 email: bweber@redsparklabs.com
-image: samples/04_300x180.jpg
+post-date: 2012-12-16
 ---
 
 [Updated - This demo is using the contextio 0.4.0 rubygem]

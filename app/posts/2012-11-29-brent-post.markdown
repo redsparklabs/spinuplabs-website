@@ -4,6 +4,7 @@ author: Brent Weber
 email: bweber@redsparklabs.com
 keywords: Microsoft CRM, Ruby, Rails, Portal, Customer, XRM
 description: Simple script showing how easy it is to create a Ruby on Rails app with a MSCRM backend.
+post-date: 2012-11-22
 ---
 
 ### Ruby is easier than PHP for lots of stuff ###

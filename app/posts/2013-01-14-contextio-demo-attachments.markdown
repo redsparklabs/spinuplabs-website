@@ -2,6 +2,7 @@
 title: Context.io Demo - List Attachments
 author: Brent Weber
 email: bweber@redsparklabs.com
+post-date: 2012-1-16
 ---
 
 generate attachments controller

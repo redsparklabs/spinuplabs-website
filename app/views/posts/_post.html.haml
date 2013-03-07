@@ -1,8 +1,9 @@
-
 .post
   %h3= link_to post.title, post
   %h6.subheader
-    Posted on Friday, Nov 22, 2012
+    Posted
+    = time_ago_in_words post.date
+    ago
   .entry-content.clearfix
     - if post.image
       =image_tag '/assets/'+post.image, :class => 'left'
@@ -12,4 +13,4 @@
     - else
       ~ post.content_html
   %h6.subheader
-    18 Comments | Tags: Design, Entrepreneur
+    Tags: Design, Entrepreneur
