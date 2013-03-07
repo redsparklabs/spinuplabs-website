@@ -7,27 +7,25 @@ description: Demo integrating a simple rails app with keen.io event tracking.
 post-date: 2013-03-06
 ---
 
-# Startup Metrics with Keen.io
-
 ![Keen.io Logo](https://keen_web_static.s3.amazonaws.com/img/keen_io_logo_rgb_2x.png)
 
 We all know how important it is to track the relevant metrics for our startup.  There are numerous startups out there competing to fill this need.  I have looked at many of them and they are either hard to integrate, or they have specific metrics which they have determined to be "valid" metrics.
 
 When building a startup you go through various stages and your important metrics change as you progress through the growth stages.  What may start out as a vanity metric soon becomes an important metric for *your* business.
 
-For a client of ours, we are implements a tracking system to track multiple specific events.  I have been evaluating different options for tracking these events we care about and decided to give keen.io a test run.
+For a client of ours, we are implementing a tracking system to track multiple specific events.  I have been evaluating different options for tracking these events we care about and decided to give [Keen.io](http://www.keen.io) a test run.
 
-I wrote up a basic little rails app which has a pretty simple structure.  The world has people, and each individual person has multiple animals (wild, pets, etc).
+I wrote up a basic little rails app which has a pretty simple structure.  The world has people, and each individual person has multiple animals (wild, pets, etc).  Download my rails app [here](http://github.com/redsparklabs) and follow along.
 
   ![ERD Document](/assets/erd.jpeg)
 
-First things first, let's sign up for a keen.io account.  (http://www.keen.io)
+First things first, you need to sign up for a keen.io account.  [Keen.io](http://www.keen.io)
 
-Once you have confirmed your account and logged in, create a new project
+Once you have confirmed your account and logged into your keen.io account, create a new project.
 
 ![Create New Project](/assets/create_project.jpeg)
 
-You can create a new rails app, or use an existing one.  I am going to assume you already have a rails app built and already know what you want to track.  For my particular app, I want to track when a visitor views a profile (person) or views an animal.
+Back on our local dev machine, we need to edit our app.  I am going to assume you already have a rails app built and already know what you want to track or have downloaded and initialized my [ demo app](http://github.com/redsparklabs).  For my particular app, I want to track when a visitor views a profile (person) or views an animal.  For your app that may be tracking when a user signs up or activates their account.
 
 First we want to install the keen gem
 
@@ -43,15 +41,13 @@ then
 
     # bundle install
 
-Now that we have our gem installed, we want to put in our Keen project id.  Since this was a quick and dirty demo, I simple set an environment variable in the environment/development.rb file.
+Now that we have our gem installed, we want to put in our Keen project id.  Since this was a quick and dirty demo, I simple set an environment variable in the environment/development.rb file.  For something you are going to push to production there are multiple ways of doing this better.
 
     ENV['KEEN_PROJECT_ID'] = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
-For something you are going to push to production there are multiple ways of doing this better.
 
-With that we are ready to start pushing event data to keen.
 
-In my controller I am pushing the event details to keen.
+With that we are ready to start pushing event data to keen.  I am doing this in my controller, however you could do it in your view if you had to.
 
     def person
       @person = Person.find_by_id(params[:id])
