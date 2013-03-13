@@ -1,10 +1,10 @@
 ---
-title: Startup Metrics with Keen.io
+title: Startup Metrics with Keen IO
 author: Brent Weber
 email: bweber@spinuplabs.com
 keywords: Startup Metrics, metrics, cohort analysis, pirate metrics
-description: Demo integrating a simple rails app with keen.io event tracking.
-post-date: 2013-03-06
+description: Demo integrating a simple rails app with Keen IO event tracking.
+post-date: 2013-03-12
 ---
 
 ![Keen.io Logo](https://keen_web_static.s3.amazonaws.com/img/keen_io_logo_rgb_2x.png)
@@ -13,15 +13,15 @@ We all know how important it is to track the relevant metrics for our startup.  
 
 When building a startup you go through various stages and your important metrics change as you progress through the growth stages.  What may start out as a vanity metric soon becomes an important metric for *your* business.
 
-For a client of ours, we are implementing a tracking system to track multiple specific events.  I have been evaluating different options for tracking these events we care about and decided to give [Keen.io](http://www.keen.io) a test run.
+For a client of ours, we are implementing a tracking system to track multiple specific events.  I have been evaluating different options for tracking these events we care about and decided to give [Keen IO](http://www.keen.io) a test run.
 
 I wrote up a basic little rails app which has a pretty simple structure.  The world has people, and each individual person has multiple animals (wild, pets, etc).  Download my rails app [here](http://github.com/redsparklabs) and follow along.
 
   ![ERD Document](/assets/erd.jpeg)
 
-First things first, you need to sign up for a keen.io account.  [Keen.io](http://www.keen.io)
+First things first, you need to sign up for a Keen IO account.  [Keen IO](http://www.keen.io)
 
-Once you have confirmed your account and logged into your keen.io account, create a new project.
+Once you have confirmed your account and logged into your Keen IO account, create a new project.
 
 ![Create New Project](/assets/create_project.jpeg)
 
@@ -41,7 +41,7 @@ then
 
     # bundle install
 
-Now that we have our gem installed, we want to put in our Keen project id.  Since this was a quick and dirty demo, I simple set an environment variable in the environment/development.rb file.  For something you are going to push to production there are multiple ways of doing this better.
+Now that we have our gem installed, we want to put in our Keen IO project id.  Since this was a quick and dirty demo, I simple set an environment variable in the environment/development.rb file.  For something you are going to push to production there are multiple ways of doing this better.
 
     ENV['KEEN_PROJECT_ID'] = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
@@ -69,12 +69,12 @@ Now I can go back to my keen.io dashboard and using the event explorer, confirm 
 
 ![Event Confirmation](/assets/event_confirm.jpeg)
 
-Once keen.io is receiving events, you can use the API Workbench to quickly create data visualizations.  For my particular instance, I want to see a graph showing the event details for "view_profile".
+Once Keen IO is receiving events, you can use the API Workbench to quickly create data visualizations.  For my particular instance, I want to see a graph showing the event details for "view_profile".
 
 ![API Workbench Graphic](/assets/api_workbench_graphic.jpeg)
 ![API Workbench Javascript](/assets/api_workbench_javascript.jpeg)
 
-Keen.io makes this step so simple.  They provide you with the details to easily use their [Javascript SDK](https://keen.io/docs/clients/javascript/usage-guide/), as well as the javascript to generate the graph content.
+Keen IO makes this step so simple.  They provide you with the details to easily use their [Javascript SDK](https://keen.io/docs/clients/javascript/usage-guide/), as well as the javascript to generate the graph content.
 
     <h1>Dashboard</h1>
     <script type="text/javascript">
