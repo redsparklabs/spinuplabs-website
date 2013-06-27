@@ -1,25 +1,65 @@
-<%= render 'feed_link' %>
-<div class='row'>
-  <div class='twelve columns'>
-    <%= render resource, :summary => false %>
+
+<section class="section-page-header">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="page-header">
+          <h4>— BLOG —</h4>
+        </div>
+      </div>
     </div>
-</div>
-<div class="row">
-    <div class="twelve columns">
-      <div id="disqus_thread"></div>
+    <img src="/assets/theme/divider_shadow.png" title="" alt="">
   </div>
-</div>
+</section>
 
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'spinuplabs'; // required: replace example with your forum shortname
+<section class="blog blog1">
+  <div class="container">
+    <div class="row">
+      <div class="span8">
+        <article>
+          <div class="row">
+            <div class="span1">                                    
+              <div class="post-date">
+                <div class="day"><%= @post.post_date.strftime('%d') %></div>
+                <div class="month"><%= @post.post_date.strftime('%b') %></div>
+              </div>                                   
+            </div>
+            <div class="span7">                                                                
+              <h3 class="blog-title">
+                <%= @post.title %>
+              </h3>   
+              <div class="article_meta">
+                <ul class="meta-list">
+                  <li><a href=""><span class="icon-user"></span> <%= @post.author %></a></li>
+                </ul>
+              </div>
+              <%= Kramdown::Document.new(@post.body).to_html.html_safe %>
+              <hr>
+              <div id="disqus_thread"></div>     
+            </div>
+          </div>
+        </article>   
+      </div>
+      <div class="span3 offset1 sidebar">
+        <div class="widget recent-post">
+          <div class="divider1"><h5>Recent Blog Posts</h5></div>
+          <%= render 'posts/recent_posts' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'spinuplabs'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>

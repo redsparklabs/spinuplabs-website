@@ -1,0 +1,57 @@
+<section class="section-page-header">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="page-header">
+          <h4>— BLOG —</h4>
+        </div>
+      </div>
+    </div>
+    <img src="/assets/theme/divider_shadow.png" title="" alt="">
+  </div>
+</section>
+
+<section class="blog blog1">
+  <div class="container">
+    <div class="row">
+      <div class="span8">
+        <% @posts.each do |post| %>
+        <article>
+          <div class="row">
+            <div class="span1">                                    
+              <div class="post-date">
+                <div class="day"><%= post.post_date.strftime('%d') %></div>
+                <div class="month"><%= post.post_date.strftime('%b') %></div>
+              </div>                                   
+            </div>
+            <div class="span7">                                                                
+              <h3 class="blog-title">
+                <%= link_to post.title, post_path(post.slug) %>
+              </h3>   
+              <div class="article_meta">
+                <ul class="meta-list">
+                  <li><a href=""><span class="icon-user"></span> <%= post.author %></a></li>
+                </ul>
+              </div>
+              <%= Kramdown::Document.new(post.intro).to_html.html_safe %>
+
+              <p><%= link_to 'Read More <i class="icon-circle-arrow-right"></i>'.html_safe, post_path(post.slug) %>
+              </p>                      
+            </div>
+          </div>
+        </article>   
+        <hr>
+        <% end %>
+
+        <%= paginate @posts %>                
+      </div>
+      <div class="span3 offset1 sidebar">
+        <div class="widget recent-post">
+          <div class="divider1"><h5>Recent Blog Posts</h5></div>
+          <%= render 'posts/recent_posts' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

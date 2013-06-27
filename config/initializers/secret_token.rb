@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-SpinupBlog::Application.config.secret_token = 'c837f5c04e55fef55753ad55cc4322e51d2cbf1f0da927ce8d396df993d1c95d647b540ce9bbbc5ff4db6e5d2a406f6b4a161bd068417d721d3ffa992f3f5238'
+SpinuplabsWeb::Application.config.secret_token = '3a4c77ef801fb1381f7b035899cc18efd5fc8aebbe4153fa897d8b3536f0fd1e807ad398fdcc92854cb95d9b5f268a5c9fd0c6066b7a85a830008c471403ae99'

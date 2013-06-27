@@ -1,0 +1,48 @@
+.bottom-20 {
+  margin-bottom: 20px;
+}
+
+#cta {
+  float: none;
+}
+
+#cta {
+  background-color: rgb(34, 170, 238);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#cta h4 {
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.field_with_errors {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+
+.client {
+  height: 100px;
+  background-color: #FFF;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* The ghost, nudged to maintain perfect centering */
+.client img:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can
+   also be of any width and height */ 
+.client img {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100px;
+}

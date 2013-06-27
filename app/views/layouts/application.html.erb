@@ -1,35 +1,83 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>SpinUp Labs - Full Stack Web App Development</title>
-		 <%#ß= stylesheet_link_tag    "application", :media => "all" %>
-		 <%= stylesheet_link_tag "style", :media => "all" %>
-		 <%= javascript_include_tag "application" %>
-		 <%= csrf_meta_tags %>
-		<link href="http://fonts.googleapis.com/css?family=Lato:300,900" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-		<section class="header">
-			<div class="container">
-				<div class="logo">
-				</div>
-				<nav class="main">
-					<ul>
-						<li><%= link_to 'Home','/' %></li>
-						<li><%= link_to 'Our Team','/team' %></li>
-						<li><%= link_to 'Blog', '/blog/' %></li>
-						<li><%= link_to 'Contact Us','/contact' %></li>
-					</ul>
-				</nav>
-			</div>
-		</section>
-				<%= yield %>
-		<section class="footer">
-			<div class="container">
-				<div>
-					<br /><span class="cta">Copyright&copy; 2012, All Rights Reserved</span>
-				</div>
-			</div>
-		</section>
-	</body>
+<html lang="en">
+<head>
+  <title>SpinuplabsWeb</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="header">
+    <div class="container">
+      <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+          <div class="brand-wrapper">
+            <a class="brand" href="#">
+              <img src="/assets/spinup-logo-trans.png" width="150px">
+            </a>
+          </div>
+          <ul class="nav">
+            <li class="active"><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'Blog', pages_blog_path %></li>
+            <li><%= link_to 'About', pages_about_path %></li>
+            <li><%= link_to 'Contact', pages_contact_path %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- CONTENT -->
+
+    <%= yield %>       
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="span4 about">
+        <h5>About Us</h5>
+        <p>SpinUp Labs is a full-service technology consultancy.  We primarily work with startups using technologies like Ruby on Rails, PHP, Angular.js, Ember.js, Capistrano, Passenger, Vagrant and various others.</p>
+        <%= render 'pages/contact_details' %>
+      </div>
+      <div class="span4 recent-post">
+        <h5>Recent Posts</h5>
+        <%= render 'posts/recent_posts' %>
+      </div>
+      <div class="span4 twitter-widget">
+        <h5>Latest Tweets</h5>
+        <div class="tweet">
+          <a class="twitter-timeline" href="https://twitter.com/spinuplabs" data-widget-id="350319198267908097" height="300" >Tweets by @spinuplabs</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div> 
+      </div>
+    </div>
+  </div>
+</footer>
+
+<section class="socket">
+  <div class="container">
+    <div class="row">
+      <div class="span6">
+        <span>© 2013 SpinUp Labs. All rights reserved.</span>     
+      </div>
+      <div class="span6">
+        <ul class="social-links">
+          <li>Stay Connected</li>
+          <li><a href="#"><i class="icon-facebook"></i></a></li>
+          <li><a href="#"><i class="icon-twitter"></i></a></li>
+          <li><a href="#"><i class="icon-linkedin"></i></a></li>
+          <li><a href="#"><i class="icon-pinterest"></i></a></li>
+          <li><a href="#"><i class="icon-google-plus"></i></a></li>
+        </ul>   
+      </div>
+    </div>     
+  </div>
+</section>
+
+<%= javascript_include_tag "application" %>
+
+</body>
 </html>

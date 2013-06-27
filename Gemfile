@@ -1,23 +1,25 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'sqlite3'
+
+gem 'pg'
+gem 'kramdown'
+gem 'kaminari'
+
 group :development do
-	#gem 'sqlite3'
-	gem 'pg'
-	gem 'puma'
+  gem 'puma'
+  gem 'capistrano'
+  gem 'rvm-capistrano'
+  gem 'less-rails'
+  gem 'therubyracer'
 end
 
-group :production do
-	gem 'pg'
-end
-
-gem 'postmarkdown'
-gem 'high_voltage'
-gem 'haml'
+gem 'twitter-bootstrap-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.

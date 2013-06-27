@@ -1,28 +1,94 @@
-<div class="container_12">
-	<div class="grid_8">
-		<h1>Contact Us</h1>
-		<p>Want to hire us? We love to work with great clients and make their ideas become a reality.</p>
-		<form class="standard" method="post" action="">
-			<div class="field">
-				<label><strong>Name</strong></label>
-				<input type="text'" size="45" name="name" id="name" class="textbox rounded shadow hovershadow">
-			</div>
-			<div class="field">
-				<label><strong>Company</strong></label>
-				<input type="text'" size="45" name="company" id="company" class="textbox rounded shadow hovershadow">
-			</div>
-			<div class="field">
-				<label><strong>Phone</strong></label>
-				<input type="text'" size="45" name="phone" id="phone" class="textbox rounded shadow hovershadow">
-			</div>
-		</form>
-	</div>
-	<div class="grid_4">
-		<h3>Phone Number</h3>
-		<p>(866) 985-6877</p>
-		<h3>Email</h3>
-		<p>hello@spinuplabs.com</p>
-		<h3>Follow Us</h3>
-		<p>@spinuplabs</p>
-	</div>
-</div>
+<section class="section-page-header">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="page-header">
+          <h4>— CONTACT US —</h4>
+        </div>
+      </div>
+    </div>
+    <img src="/assets/theme/divider_shadow.png" title="" alt="">
+  </div>
+</section>
+
+<!--<section class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="img-polaroid">                            
+          <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=1560+Johnston+Street,+Wheatland,+WY&amp;ll=42.050886,-104.96258&amp;spn=0.020841,0.047464&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+<section class="alerts">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <% if flash[:error] -%>
+          <p class='alert alert-error'>
+            <%= flash[:error].html_safe %><br /><br />
+            <% if @contact.errors.full_messages.any? %>
+              <% @contact.errors.full_messages.each do |error_message| %>
+                <%= error_message %> <br />
+              <% end %>
+            <% end %>
+          </p>
+        <% end -%>
+        <% if flash[:notice] -%>
+          <p class='alert alert-notice'><%= flash[:notice].html_safe %></p>
+        <% end -%>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="span4 our-office">
+        <h4>OUR OFFICES</h4>
+        <hr>
+        <%= render 'pages/contact_details' %>                    
+      </div>
+      <div class="span8 contact-form">
+        <h4>SEND US A MESSAGE</h4>
+        <hr>
+        <%= form_for(@contact, url: {controller: "contacts", action: "create"} ) do |f| %>
+
+          <div class="row">
+            <div class="span4">
+              <label>Name</label>
+              <%= f.text_field :name, :class => 'span4', :placeholder => '(required)', :required => '' %>
+            </div>
+            <div class="span4">
+              <label>E-mail</label>
+              <%= f.text_field :email, :class => 'span4', :placeholder => '(required)', :required => '' %>
+            </div>
+            <div class="span4">
+              <label>Phone</label>
+              <%= f.text_field :phone, :class => 'span4', :placeholder => '(required)', :required => '' %>
+            </div>
+            <div class="span4">
+              <label>Budget</label>
+              <%= f.select :budget, @budgets, {}, { :class => 'span4' } %>
+            </div>            
+            <div class="span8">
+              <label>Subject</label>
+              <%= f.text_field :subject, :class => 'span8' %>
+            </div>
+            <div class="span8">
+              <label>Message</label>
+              <%= f.text_area :message, :class => 'span8', :rows => 8, :placeholder => '(required)', :required => '' %>                                
+            </div>  
+            <div class="span8">
+              <button class="btn btn-success" type="submit">Submit Message</button>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>

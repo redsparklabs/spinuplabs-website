@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-SpinupBlog::Application.load_tasks
+SpinuplabsWeb::Application.load_tasks

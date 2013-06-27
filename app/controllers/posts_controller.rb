@@ -1,44 +1,92 @@
 class PostsController < ApplicationController
-  layout 'default'
 
-  def show
-    resource
-    $title = @resource.title
-    $keywords = @resource.keywords
-    $description = @resource.description
-  end
+  before_filter :authenticate, :except => [:show]
+  # GET /posts
+  # GET /posts.json
+  def index
+    @posts = Post.order('post_date DESC').all
+    #@post_pages, @posts = paginate(:posts, :order => 'post_date DESC', :per_page => 2)
 
-  def home
-    collection
-  end
-
-  def feed
-    max_age = 4.hours
-    response.headers['Cache-Control'] = 'public, max-age=' + max_age.to_i.to_s
-    response.headers['Expires'] = max_age.from_now.httpdate
-    response.content_type = 'application/atom+xml'
-    fresh_when :last_modified => Post.feed_last_modified
-  end
-
-  protected
-
-  def resource
-    @resource ||= Post.find(params[:id])
-  end
-  helper_method :resource
-
-  def collection
-    @collection ||= begin
-      posts = Post.where(params.slice(:year, :month, :day))
-      posts = Kaminari.paginate_array(posts).page(params[:page]).per(posts_per_page)
-      posts
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @posts }
     end
   end
-  helper_method :collection
 
-  private
+  # GET /posts/1
+  # GET /posts/1.json
+  def show
+    #raise params[:id].inspect
+    if !@post = Post.find_by_id(params[:id])
+      @post = Post.find_by_slug(params[:id])
+    end
 
-  def posts_per_page
-    params[:count] || Postmarkdown::Config.options[:posts_per_page]
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @post }
+    end
+  end
+
+  # GET /posts/blog-post
+  # GET /posts/blog-post.json
+
+  # GET /posts/new
+  # GET /posts/new.json
+  def new
+    @post = Post.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @post }
+    end
+  end
+
+  # GET /posts/1/edit
+  def edit
+    @post = Post.find(params[:id])
+  end
+
+  # POST /posts
+  # POST /posts.json
+  def create
+    @post = Post.new(params[:post])
+
+    respond_to do |format|
+      if @post.save
+        format.html { redirect_to posts_path, notice: 'Post was successfully created.' }
+        format.json { render json: @post, status: :created, location: @post }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @post.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /posts/1
+  # PUT /posts/1.json
+  def update
+    @post = Post.find(params[:id])
+
+    respond_to do |format|
+      if @post.update_attributes(params[:post])
+        format.html { redirect_to posts_path, notice: 'Post was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @post.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /posts/1
+  # DELETE /posts/1.json
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+
+    respond_to do |format|
+      format.html { redirect_to posts_url }
+      format.json { head :no_content }
+    end
   end
 end

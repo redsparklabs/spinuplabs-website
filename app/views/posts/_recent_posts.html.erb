@@ -1,0 +1,12 @@
+            <ul>
+              <% @recent_posts.each do |post| %>
+              <li>
+                <div class="row">
+                  <div class="recent-body span3">
+                    <%= link_to post.title, post_path(post.slug) %><br />
+                    <em><small><%= post.post_date.strftime('%b %d, %Y') %></small></em>
+                  </div>
+                </div>
+              </li>
+              <% end %>
+            </ul>

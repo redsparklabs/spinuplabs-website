@@ -1,19 +1,19 @@
-SpinupBlog::Application.routes.draw do
+SpinuplabsWeb::Application.routes.draw do
+  post "contacts/create"
 
-  match "/home" => "posts#home"
-  match "/about" => "pages#about"
-  #match "/team" => "pages#team"
-  #match "/contact" => "pages#contact"
-  match '/contact' => 'contact#new', :as => 'contact', :via => :get
-  match '/contact' => 'contact#create', :as => 'contact', :via => :post
-  match "/work" => "pages#work"
-  #root :to => "welcome#index"
-  postmarkdown :as => :blog
-  match "/pages/*id" => 'pages#show', :as => :page, :format => false
-  match "/posts/archive" => "posts#archive"
-  match "/" => "pages#home"
+  resources :posts
 
-  root :to => "pages#home"
+  get "pages/index"
+
+  get "pages/about"
+
+  get "pages/contact"
+
+  get "pages/blog"
+
+  get "pages/our-process", :to => 'pages#our_process', :as => 'pages_our_process'
+
+  root :to => 'pages#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

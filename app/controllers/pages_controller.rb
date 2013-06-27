@@ -1,39 +1,20 @@
-class PagesController < HighVoltage::PagesController
-  #before_filter :authenticate
-  #layout :layout_for_page
+class PagesController < ApplicationController
+  require 'kramdown'
+  def index
+  end
 
-    layout 'default'
+  def about
+  end
 
-    def home
-        @posts = latest_from_blog
-        $title = "Home"
-    end
+  def contact
+    @contact = Contact.new
+  end
 
-    def about
-        @posts = latest_from_blog
-        $title = "About Us"
-    end
+  def our_process
+  end
 
-    def work
-        $title = "Past Work"
-    end
-
-    def team
-        $title = "The Team"
-    end
-
-    protected
-
-    def layout_for_page
-        case params[:id]
-            when 'home'
-                'application'
-            else
-                'application'
-            end
-        end
-
-    def latest_from_blog
-        Post.all.first(2)
-    end
+  def blog
+    @posts = Post.order('post_date DESC').page params[:page]
+    #@post_pages, @posts = paginate(:posts, :order => 'post_date DESC', :per_page => 2)
+  end
 end
