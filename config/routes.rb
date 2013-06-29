@@ -13,6 +13,18 @@ SpinuplabsWeb::Application.routes.draw do
 
   get "pages/our-process", :to => 'pages#our_process', :as => 'pages_our_process'
 
+  #match "/blog/2013/03/12/startup-metrics-with-keen", :to => redirect("/posts/startup-metrics-with-keen")
+
+  #match "/blog/2013/01/12/contextio-demo-contacts", :to => redirect("/posts/context-io-demo-list-contacts")
+
+  #match "/blog/2013/01/14/contextio-demo-attachments", :to => redirect("/posts/context-io-demo-list-attachments")
+
+  #match "/blog/2012/12/05/killing-features-vanity-metric", :to => "/posts/killing-features-is-a-vanity-metric"
+
+  #match "/blog/2012/11/29/brent-post", :to => "/posts/ruby-and-mscrm-on-premise"
+
+  match "/blog/:year/:month/:day/:slug", :to => "/posts/%{slug}"
+
   root :to => 'pages#index'
 
   # The priority is based upon order of creation:
