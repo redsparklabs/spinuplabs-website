@@ -21,7 +21,7 @@ SpinuplabsWeb::Application.routes.draw do
 
   #match "/blog/2012/12/05/killing-features-vanity-metric", :to => "/posts/killing-features-is-a-vanity-metric"
 
-  match "/blog/2012/11/29/brent-post", :to => "/posts/ruby-and-mscrm-on-premise"
+  match "/blog/2012/11/29/brent-post", :to => redirect("/posts/ruby-and-mscrm-on-premise")
 
   match "/blog/:year/:month/:day/:slug", :to => redirect("/posts/%{slug}")
 
