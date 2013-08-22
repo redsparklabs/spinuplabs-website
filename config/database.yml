@@ -20,7 +20,7 @@ test:
   timeout: 5000
 
 production:
-  adapter: postrgesql
+  adapter: postgresql
   database: spinuplabs_website
   username: spup_database
   password: DamnImGood00
