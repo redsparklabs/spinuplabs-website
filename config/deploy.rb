@@ -4,13 +4,13 @@ require "bundler/capistrano"
 set :use_sudo, false
 set :user, 'dev'
 set :domain, '192.241.211.105'
-set :applicationdir, "/home/dev/tiger/workorder/"
-set :deploy_to, "/home/dev/tiger/workorder/"
+set :applicationdir, "/home/dev/spinuplabs/website/"
+set :deploy_to, "/home/dev/spinuplabs/website/"
 #set :deploy_to, :applicationdir
 
-set :application, "Tiger Work Order"
+set :application, "SpinUp Labs Website"
 
-set :repository,  "git@bitbucket.org:spinuplabs/tiger_workorder.git"
+set :repository,  "git@github.com:redsparklabs/spinuplabs-website.git"
 set :scm, :git
 set :scm_verbose, true
 set :branch, "master"
