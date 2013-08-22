@@ -1,3 +1,7 @@
+body {
+    font-family: 'Lato','Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .bottom-20 {
   margin-bottom: 20px;
 }
@@ -45,3 +49,17 @@
   vertical-align: middle;
   max-height: 100px;
 }
+
+#main-content {
+  color: #000;
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  font-family: 'Source Sans Pro','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+#main-content p {
+  margin-bottom: 1.25em;
+}
+
+
